@@ -56,23 +56,46 @@ h1 {
   color: #0088a9;
 }
 
-/* Creating the grid for the page layout */
-
-.page-wrapper {
-  display: grid;
-}
 
 /* Styling for the headline section  */
 
-
-/* Styling for projects section */
-.page-section {
-  display: grid;
- 
+.hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  padding-left: 1%;
 }
 
-.projects {
-  border: solid; 
+.hero-banner img {
+  height: 475px;
+  width: 600px;
+}
+
+.hero-banner p {
+  display: inline-block;
+  font-size: 80px;
 
 }
+
+
+/* Grid and styling for skills section */
+
+#my-skills {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #my-skills h2 {
+    padding: 1%;
+  }
+  
+.skills-block {
+    display: inline-block;
+    border: 2px solid black;
+    height: 150px;
+    width: 500px;
+    text-align: center;
+    line-height: 30px;
+  }
 
