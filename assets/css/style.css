@@ -1,3 +1,5 @@
+/* Entire page styling */
+
 * {
   box-sizing: border-box;
 }
@@ -21,3 +23,56 @@ h6 {
 p {
   margin: 0;
 }
+/* Styling for the nav bar  */
+
+header  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  padding-left: 1%;
+}
+
+h1 {
+  padding-left: 0%;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+  
+
+}
+.nav_links li a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+/* Creating the grid for the page layout */
+
+.page-wrapper {
+  display: grid;
+}
+
+/* Styling for the headline section  */
+
+
+/* Styling for projects section */
+.page-section {
+  display: grid;
+ 
+}
+
+.projects {
+  border: solid; 
+
+}
+
