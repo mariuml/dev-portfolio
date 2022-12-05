@@ -157,29 +157,6 @@ left: 60px;
  
 }
 
-/* Main grid */
-
-/* .page-wrapper {
-display: grid;
-
+#contact {
+  
 }
-
-.skills-block {
-  grid-area: about-block;
-  border: 2px solid black;
-}
-
-.page-section h2 {
-  grid-area: heading; 
-  border: 2px solid black;
-}
-
-.projects {
-  grid-area: projects;
-  border: 2px solid black;
-}
-
-.footer {
-  grid-area: contact;
-  border: 2px solid black;
-} */
