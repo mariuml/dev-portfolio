@@ -23,7 +23,7 @@ h6 {
 p {
   margin: 0;
 }
-/* Styling for the nav bar  */
+/* Styling for the nav bar and links  */
 
 header  {
   display: flex;
@@ -37,22 +37,23 @@ h1 {
   padding-left: 0%;
 }
 
-.nav_links {
+.links {
   list-style: none;
 }
 
-.nav_links li {
+.links li {
   display: inline-block;
   padding: 0px 20px;
   
 
 }
-.nav_links li a {
+.links li a {
   text-decoration: none;
   transition: all 0.3s ease 0s;
+  color: rgb(85,26, 139);
 }
 
-.nav_links li a:hover {
+.links li a:hover {
   color: #0088a9;
 }
 
@@ -106,7 +107,7 @@ h1 {
   margin: 0px 5%;
   padding-left: 8%;
   height: 1000px;
-  width: 1756px;
+  width: 85vw;
   grid-gap: 50px;
   /* grid-template-rows:  */
   grid-template-columns: 2fr 2fr;
@@ -157,6 +158,12 @@ left: 60px;
  
 }
 
+/* Footer flexbox styling */
 #contact {
-  
+display: flex;
+width: 85vw;
+height: 50px;
+margin-left: 12%;
+border: solid 2px black;
+justify-content: space-evenly;
 }
