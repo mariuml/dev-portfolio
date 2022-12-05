@@ -29,8 +29,8 @@ header  {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10%;
   padding-left: 1%;
+  background-color: pink;
 }
 
 h1 {
@@ -39,6 +39,7 @@ h1 {
 
 .links {
   list-style: none;
+  font-size: 30px;
 }
 
 .links li {
@@ -57,10 +58,205 @@ h1 {
   color: #0088a9;
 }
 
+/* Main grid */
+
+.page-wrapper {
+  display: grid;
+  width: 90vw;
+  margin-left: 20px;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "hero-headline hero-image hero-image"
+  "skills-heading skills-section skills-section"
+  "work-heading main-project main-project"
+  "work-heading project-1 project-2"
+  "work-heading project-3 project-4"
+  "contact-heading contact-section contact-section"
+  ; 
+}
+
+
+
+/* Hero section  */
+#hero-headline {
+  grid-area: hero-headline;
+  align-self: center;
+  justify-self: center;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left: 20px;
+}
+
+#hero-image {
+  grid-area: hero-image;
+  height: 475px;
+  width: 600px;
+  align-self: center;
+  justify-self: center;
+  padding-top: 10px;
+
+}
+
+
+/* Grid areas - skills section  */
+
+#skills-heading {
+  grid-area: skills-heading;
+  border-right: 2px black solid;
+text-align: center;
+padding-top: 40%;
+font-size: 50px;
+}
+
+#skills-section {
+  grid-area: skills-section;
+  border: 2px black solid;
+}
+
+/* Grid areas - project examples */
+
+#work-heading {
+  grid-area: work-heading;
+  border-right: 2px black solid;
+  text-align: center;
+padding-top: 40%;
+font-size: 50px;
+  
+}
+
+/* Main project styling */
+
+#main-project-description {
+  border: 2px white solid;
+  width: 300px;
+height: 110px;
+text-align: center;
+background-color: aquamarine;
+margin-top: 170px;
+font-size: 30px;
+}
+
+
+#main-project {
+  grid-area: main-project;
+  border: 2px black solid;
+  background-image: url("../images/horiseon-website.jpg");
+  object-fit: cover;
+ 
+  
+}
+
+
+/* Project 1 styling */
+
+
+#project-1 {
+  grid-area: project-1;
+  border: 2px black solid;
+  background-image: url("../images/study-guide.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+#project-1-description {
+border: 2px white solid;
+width: 300px;
+height: 190px;
+text-align: center;
+background-color: aquamarine;
+margin-top: 170px;
+font-size: 30px;
+}
+
+/* Project 2 styling */
+
+#project-2 {
+  grid-area: project-2;
+  border: 2px black solid;
+  background-image: url("../images/02-portfolio-1.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+#project-2-description {
+  border: 2px white solid;
+  width: 300px;
+  height: 110px;
+  text-align: center;
+  background-color: aquamarine;
+  margin-top: 170px;
+  font-size: 30px;
+  }
+
+
+  /* Project 3 styling */
+#project-3 {
+  grid-area: project-3;
+  border: 2px black solid;
+  background-image: url("../images/calculator-project.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+
+#project-3-description {
+    border: 2px white solid;
+    width: 300px;
+    height: 130px;
+    text-align: center;
+    background-color: aquamarine;
+    margin-top: 170px;
+    font-size: 30px; 
+}
+
+/* Project 4 styling */
+
+#project-4 {
+  grid-area: project-4;
+  border: 2px black solid;
+  background-image: url("../images/run-buddy.png");
+  object-fit: cover;
+  
+}
+
+#project-4-description {
+  border: 2px white solid;
+  width: 300px;
+  height: 130px;
+  text-align: center;
+  background-color: aquamarine;
+  margin-top: 170px;
+  font-size: 30px; 
+}
+
+
+
+
+
+/* Grid area - contact me */
+
+#contact-heading {
+  grid-area: contact-heading;
+  border-right: 2px black solid;
+  text-align: center;
+padding-top: 40%;
+font-size: 50px;
+}
+
+#contact-section {
+  grid-area: contact-section;
+  border: 2px black solid;
+}
+
+/* footer styling */
+
 
 /* Styling for the headline section  */
 
-.hero-banner {
+/* .hero-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,21 +264,17 @@ h1 {
   padding-left: 1%;
 }
 
-.hero-banner img {
-  height: 475px;
-  width: 600px;
-}
 
 .hero-banner p {
   display: inline-block;
   font-size: 80px;
 
-}
+} */
 
 
 /* Grid and styling for skills section */
 
-#my-skills {
+/* #my-skills {
     display: flex;
     justify-content: space-evenly;
   }
@@ -98,11 +290,11 @@ h1 {
     width: 500px;
     text-align: center;
     line-height: 30px;
-  }
+  } */
 
 /* Grid and styling for work portfolio  */
 
-#work {
+/* #work {
   display: grid;
   margin: 0px 5%;
   padding-left: 8%;
@@ -110,15 +302,15 @@ h1 {
   width: 85vw;
   grid-gap: 50px;
   /* grid-template-rows:  */
-  grid-template-columns: 2fr 2fr;
+  /* grid-template-columns: 2fr 2fr;
   grid-template-rows: 3fr 1fr 1fr;
   grid-template-areas: 
   "main-project main-project"
   "project-1 project-2" 
   "project-3 project-4"
-}
+} */
 
-#work h2 {
+/* #work h2 {
   grid-area: heading; 
   border: 2px solid black;
 }
@@ -156,14 +348,14 @@ h1 {
 padding: 1%;
 left: 60px;
  
-}
+} */ 
 
 /* Footer flexbox styling */
-#contact {
+/* #contact {
 display: flex;
 width: 85vw;
 height: 50px;
 margin-left: 12%;
 border: solid 2px black;
 justify-content: space-evenly;
-}
+} */
