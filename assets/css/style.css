@@ -28,6 +28,12 @@ h6 {
 p {
   margin: 0;
 }
+
+.project-grid-area:hover {
+  background-color: #D9C0F1;
+}
+
+
 /* Styling for the nav bar and links  */
 
 header  {
@@ -308,4 +314,37 @@ color: var(--heading-color-1);
   "contact-heading"
   "contact-section";
  }
+}
+
+@media screen and (max-width: 820px) {
+
+
+ #hero-headline {
+  font-size: 50px;
+ }
+
+ h2 {
+  font-size: 60px;
+ }
+
+ .page-wrapper {
+  width: 90vw;
+  height: 90vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "hero-headline"
+  "hero-image"
+  "skills-heading"
+  "skills-section"
+  "work-heading"
+  "main-project" 
+   "project-1"
+    "project-2"
+  "project-3"
+   "project-4"
+  "contact-heading"
+  "contact-section";
+ }
+}
 }
