@@ -1,5 +1,8 @@
 /* Entire page styling */
-
+:root {
+  --heading-color-1: #7c7a7a;
+--heading-color-2: #ffc0cb;
+}
 
 * {
   box-sizing: border-box;
@@ -8,9 +11,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
-  background-color: rgba(240, 245, 220, 0.596);
+  background-color: #f8edeb;
 }
 
 h1,
@@ -32,7 +35,7 @@ header  {
   justify-content: space-between;
   align-items: center;
   padding-left: 1%;
-  background-color: pink;
+  background-color: #ffc0cb;
   width: 100vw;
 }
 
@@ -54,7 +57,7 @@ h1 {
 .links li a {
   text-decoration: none;
   transition: all 0.3s ease 0s;
-  color: rgb(85,26, 139);
+  color: #7c7a7a;
 }
 
 .links li a:hover {
@@ -89,8 +92,9 @@ h1 {
   align-self: center;
   justify-self: center;
   font-size: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding-left: 20px;
+  color:var(--heading-color-1);
 }
 
 #hero-image {
@@ -108,10 +112,11 @@ h1 {
 
 #skills-heading {
 grid-area: skills-heading;
-border-right: 2px black solid;
+border-right: 2px #7c7a7a solid;
 text-align: center;
 padding-top: 20%;
 font-size: 50px;
+color: var(--heading-color-1);
 }
 
 #skills-section {
@@ -131,13 +136,14 @@ font-size: 50px;
   text-align: center;
 padding-top: 40%;
 font-size: 50px;
+color: var(--heading-color-1);
   
 }
 
 /* Main project styling */
 
 #main-project-description {
-  border: 2px white solid;
+  border: 2px #7c7a7a solid;
   width: 300px;
 height: 110px;
 text-align: center;
@@ -159,17 +165,11 @@ font-size: 30px;
  
   }
 
-
 .work-image {
   text-decoration: none;
   color: black;
-
-
 }
 
-.work-image:hover {
-  background-color: #D9C0F1;
-}
 
 
 /* Project 1 styling */
@@ -184,7 +184,7 @@ font-size: 30px;
 }
 
 #project-1-description {
-border: 2px white solid;
+border: 2px #7c7a7a solid;
 width: 300px;
 height: 190px;
 text-align: center;
@@ -204,7 +204,7 @@ font-size: 30px;
 }
 
 #project-2-description {
-  border: 2px white solid;
+  border: 2px #7c7a7a solid;
   width: 300px;
   height: 110px;
   text-align: center;
@@ -213,8 +213,7 @@ font-size: 30px;
   font-size: 30px;
   }
 
-
-  /* Project 3 styling */
+/* Project 3 styling */
 #project-3 {
   grid-area: project-3;
   border: 4px grey solid;
@@ -225,7 +224,7 @@ font-size: 30px;
 
 
 #project-3-description {
-    border: 2px white solid;
+    border: 2px #7c7a7a solid;
     width: 300px;
     height: 130px;
     text-align: center;
@@ -245,7 +244,7 @@ font-size: 30px;
 }
 
 #project-4-description {
-  border: 2px white solid;
+  border: 2px #7c7a7a solid;
   width: 300px;
   height: 130px;
   text-align: center;
@@ -253,9 +252,6 @@ font-size: 30px;
   margin-top: 170px;
   font-size: 30px; 
 }
-
-
-
 
 
 /* Grid area - contact me */
@@ -266,6 +262,7 @@ border-right: 2px black solid;
 text-align: center;
 padding-top: 20%;
 font-size: 50px;
+color: var(--heading-color-1);
 }
 
 #contact-section {
