@@ -1,5 +1,6 @@
 /* Entire page styling */
 
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +10,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: rgba(240, 245, 220, 0.596);
 }
 
 h1,
@@ -31,6 +33,7 @@ header  {
   align-items: center;
   padding-left: 1%;
   background-color: pink;
+  width: 100vw;
 }
 
 h1 {
@@ -67,7 +70,7 @@ h1 {
   column-gap: 50px;
   row-gap: 50px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
   "hero-headline hero-image hero-image"
   "skills-heading skills-section skills-section"
@@ -104,16 +107,20 @@ h1 {
 /* Grid areas - skills section  */
 
 #skills-heading {
-  grid-area: skills-heading;
-  border-right: 2px black solid;
+grid-area: skills-heading;
+border-right: 2px black solid;
 text-align: center;
-padding-top: 40%;
+padding-top: 20%;
 font-size: 50px;
 }
 
 #skills-section {
   grid-area: skills-section;
-  border: 2px black solid;
+}
+
+#skills-section p {
+  text-align: center;
+  padding: 10px;
 }
 
 /* Grid areas - project examples */
@@ -134,7 +141,7 @@ font-size: 50px;
   width: 300px;
 height: 110px;
 text-align: center;
-background-color: aquamarine;
+background-color: pink;
 margin-top: 170px;
 font-size: 30px;
 }
@@ -142,12 +149,24 @@ font-size: 30px;
 
 #main-project {
   grid-area: main-project;
-  border: 2px black solid;
+  border:  4px grey solid;
+  background-repeat: no-repeat;
   background-image: url("../images/horiseon-website.jpg");
   object-fit: cover;
+  background-repeat: no-repeat;
+  width: 900px;
  
-  
+
+  }
+
+ 
+.work-image {
+ text-decoration: none;
+ color: black;
+
 }
+
+
 
 
 /* Project 1 styling */
@@ -155,7 +174,7 @@ font-size: 30px;
 
 #project-1 {
   grid-area: project-1;
-  border: 2px black solid;
+  border: 4px grey solid;
   background-image: url("../images/study-guide.jpg");
   object-fit: cover;
   background-repeat: no-repeat;
@@ -166,7 +185,7 @@ border: 2px white solid;
 width: 300px;
 height: 190px;
 text-align: center;
-background-color: aquamarine;
+background-color: pink;
 margin-top: 170px;
 font-size: 30px;
 }
@@ -175,7 +194,7 @@ font-size: 30px;
 
 #project-2 {
   grid-area: project-2;
-  border: 2px black solid;
+  border: 4px grey solid;
   background-image: url("../images/02-portfolio-1.jpg");
   object-fit: cover;
   background-repeat: no-repeat;
@@ -186,7 +205,7 @@ font-size: 30px;
   width: 300px;
   height: 110px;
   text-align: center;
-  background-color: aquamarine;
+  background-color: pink;
   margin-top: 170px;
   font-size: 30px;
   }
@@ -195,7 +214,7 @@ font-size: 30px;
   /* Project 3 styling */
 #project-3 {
   grid-area: project-3;
-  border: 2px black solid;
+  border: 4px grey solid;
   background-image: url("../images/calculator-project.png");
   object-fit: cover;
   background-repeat: no-repeat;
@@ -207,7 +226,7 @@ font-size: 30px;
     width: 300px;
     height: 130px;
     text-align: center;
-    background-color: aquamarine;
+    background-color: pink;
     margin-top: 170px;
     font-size: 30px; 
 }
@@ -216,7 +235,7 @@ font-size: 30px;
 
 #project-4 {
   grid-area: project-4;
-  border: 2px black solid;
+  border: 4px grey solid;
   background-image: url("../images/run-buddy.png");
   object-fit: cover;
   
@@ -227,7 +246,7 @@ font-size: 30px;
   width: 300px;
   height: 130px;
   text-align: center;
-  background-color: aquamarine;
+  background-color: pink;
   margin-top: 170px;
   font-size: 30px; 
 }
@@ -239,123 +258,54 @@ font-size: 30px;
 /* Grid area - contact me */
 
 #contact-heading {
-  grid-area: contact-heading;
-  border-right: 2px black solid;
-  text-align: center;
-padding-top: 40%;
+grid-area: contact-heading;
+border-right: 2px black solid;
+text-align: center;
+padding-top: 20%;
 font-size: 50px;
 }
 
 #contact-section {
   grid-area: contact-section;
-  border: 2px black solid;
-}
-
-/* footer styling */
-
-
-/* Styling for the headline section  */
-
-/* .hero-banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10%;
-  padding-left: 1%;
-}
-
-
-.hero-banner p {
-  display: inline-block;
-  font-size: 80px;
-
-} */
-
-
-/* Grid and styling for skills section */
-
-/* #my-skills {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  padding-top: 200px;
   
-  #my-skills h2 {
-    padding: 1%;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 550px) {
+
+  header {
+    flex-direction: column;
+    width: 100%; 
   }
-  
-.skills-block {
-    display: inline-block;
-    border: 2px solid black;
-    height: 160px;
-    width: 500px;
-    text-align: center;
-    line-height: 30px;
-  } */
 
-/* Grid and styling for work portfolio  */
+ #hero-headline {
+  font-size: 40px;
+ }
 
-/* #work {
-  display: grid;
-  margin: 0px 5%;
-  padding-left: 8%;
-  height: 1000px;
-  width: 85vw;
-  grid-gap: 50px;
-  /* grid-template-rows:  */
-  /* grid-template-columns: 2fr 2fr;
-  grid-template-rows: 3fr 1fr 1fr;
-  grid-template-areas: 
-  "main-project main-project"
-  "project-1 project-2" 
-  "project-3 project-4"
-} */
+ h2 {
+  font-size: 40px;
+ }
 
-/* #work h2 {
-  grid-area: heading; 
-  border: 2px solid black;
+ .page-wrapper {
+  width: 90vw;
+  height: 90vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "hero-headline"
+  "hero-image"
+  "skills-heading"
+  "skills-section"
+  "work-heading"
+  "main-project" 
+   "project-1"
+    "project-2"
+  "project-3"
+   "project-4"
+  "contact-heading"
+  "contact-section";
+ }
 }
-
-#main-project {
-  border: 2px solid black;
-  grid-area: main-project;
-
-}
-
-
-#project-1 {
-  border: 2px solid black;
-  grid-area: project-1;
-}
-
-#project-2 {
-  border: 2px solid black;
-    grid-area: project-2;
-}
-
-#project-3 {
-  border: 2px solid black;
-  grid-area: project-3;
-}
-
-#project-4 {
-  border: 2px solid black;
-  grid-area: project-4;
-}
-
-#subHeading {
- position: relative;
- top: 80px;
-padding: 1%;
-left: 60px;
- 
-} */ 
-
-/* Footer flexbox styling */
-/* #contact {
-display: flex;
-width: 85vw;
-height: 50px;
-margin-left: 12%;
-border: solid 2px black;
-justify-content: space-evenly;
-} */
