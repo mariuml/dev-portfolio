@@ -11,7 +11,7 @@ I learnt the importance of creating responsive layouts so websites can be viewed
 
 ## Usage
 
-The landing page has been deployed at: (https://mariuml.github.io/horiseon-website/)
+The landing page has been deployed at: (https://mariuml.github.io/dev-portfolio/)
 
 Please follow the link to view the final version.
 
