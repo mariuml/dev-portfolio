@@ -29,10 +29,6 @@ p {
   margin: 0;
 }
 
-.project-grid-area:hover {
-  background-color: #D9C0F1;
-}
-
 
 /* Styling for the nav bar and links  */
 
@@ -148,16 +144,6 @@ color: var(--heading-color-1);
 
 /* Main project styling */
 
-#main-project-description {
-  border: 2px #7c7a7a solid;
-  width: 300px;
-height: 110px;
-text-align: center;
-background-color: pink;
-margin-top: 170px;
-font-size: 30px;
-
-}
 
 
 #main-project {
@@ -167,16 +153,35 @@ font-size: 30px;
   background-image: url("../images/horiseon-website.jpg");
   object-fit: cover;
   background-repeat: no-repeat;
+  opacity: 0.7;
   width: 1100px;
  
   }
 
+  #main-project-description {
+    border: 2px #7c7a7a solid;
+    width: 300px;
+  height: 110px;
+  text-align: center;
+  background-color: pink;
+  margin-top: 170px;
+  font-size: 30px;
+
+  
+  }
 .work-image {
   text-decoration: none;
   color: black;
 }
 
+#main-project:hover {
+  background-repeat: no-repeat;
+  background-image: url("../images/horiseon-website.jpg");
+ border: 4px #ffc0cb solid;
+ opacity: 1; 
+  transition: all 0.2s ease 0s;
 
+}
 
 /* Project 1 styling */
 
@@ -186,6 +191,7 @@ font-size: 30px;
   border: 4px grey solid;
   background-image: url("../images/study-guide.jpg");
   object-fit: cover;
+  opacity: 0.7;
   background-repeat: no-repeat;
 }
 
@@ -199,6 +205,15 @@ margin-top: 170px;
 font-size: 30px;
 }
 
+#project-1:hover {
+  background-repeat: no-repeat;
+  background-image: url("../images/study-guide.jpg");
+ border: 4px #ffc0cb solid;
+ opacity: 1; 
+  transition: all 0.2s ease 0s;
+
+}
+
 /* Project 2 styling */
 
 #project-2 {
@@ -206,6 +221,7 @@ font-size: 30px;
   border: 4px grey solid;
   background-image: url("../images/02-portfolio-1.jpg");
   object-fit: cover;
+  opacity: 0.7;
   background-repeat: no-repeat;
 }
 
@@ -219,12 +235,22 @@ font-size: 30px;
   font-size: 30px;
   }
 
+  #project-2:hover {
+    background-repeat: no-repeat;
+    background-image: url("../images/02-portfolio-1.jpg");
+   border: 4px #ffc0cb solid;
+   opacity: 1; 
+    transition: all 0.2s ease 0s;
+  
+  }
+
 /* Project 3 styling */
 #project-3 {
   grid-area: project-3;
   border: 4px grey solid;
   background-image: url("../images/calculator-project.png");
   object-fit: cover;
+  opacity: 0.7;
   background-repeat: no-repeat;
 }
 
@@ -239,12 +265,22 @@ font-size: 30px;
     font-size: 30px; 
 }
 
+#project-3:hover {
+  background-repeat: no-repeat;
+  background-image: url("../images/calculator-project.png");
+ border: 4px #ffc0cb solid;
+ opacity: 1; 
+  transition: all 0.2s ease 0s;
+
+}
+
 /* Project 4 styling */
 
 #project-4 {
   grid-area: project-4;
   border: 4px grey solid;
   background-image: url("../images/run-buddy.png");
+  opacity: 0.7;
   object-fit: cover;
   
 }
@@ -259,6 +295,14 @@ font-size: 30px;
   font-size: 30px; 
 }
 
+#project-4:hover {
+  background-repeat: no-repeat;
+  background-image: url("../images/run-buddy.png");
+ border: 4px #ffc0cb solid;
+ opacity: 1; 
+  transition: all 0.2s ease 0s;
+
+}
 
 /* Grid area - contact me */
 
@@ -346,5 +390,4 @@ color: var(--heading-color-1);
   "contact-heading"
   "contact-section";
  }
-}
 }
